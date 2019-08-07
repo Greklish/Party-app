@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dj" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What time is it?"
+        android:textSize="36sp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorAccent"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorAccent"
+        android:text="It´s time tooooooo"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/costum_button"
+            />
+        <Switch
+            android:id="@+id/switch_enable"
+            android:layout_alignBottom="@id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party?"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="6"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+            android:checked="true"
+            android:switchMinWidth="60dp"
+            android:scaleX="2"
+            android:scaleY="2"
+
+
+            />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
